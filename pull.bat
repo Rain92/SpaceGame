@@ -1,2 +1,2 @@
-git pull --rebase origin
+git pull --rebase origin master
 pause
