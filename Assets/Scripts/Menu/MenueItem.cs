@@ -10,25 +10,41 @@ public class MenueItem : MonoBehaviour
     GameObject g;
     void Start()
     {
-        g = GameObject.Find("menutext");
+        g = GameObject.Find("menutext" + MenuId.ToString());
         g.renderer.enabled = false;
     }
     void LateUpdate()
     {
         if (MenuId != activemenuid)
+        {
+            g.renderer.enabled = false;
             return;
-        g.transform.position = transform.position + new Vector3(-7.7f, 7.6f, 0f);
+        }
+        g.transform.position = transform.position + new Vector3(-6.25f, 6.25f, 0f);
     }
 
     void OnMouseEnter()
     {
+        if (MenuId == activemenuid)
+            return;
         activemenuid = MenuId;
         g.renderer.enabled = true;
     }
 
-    void OnMouseExit()
+    void OnMouseDown()
     {
-        //g.renderer.enabled = false;
-        //active = true;
+        switch (MenuId)
+        {
+            case 1:
+                break;
+            case 2:
+        Debug.Log(234);
+                Application.Quit();
+                break;
+            case 3:
+                break;
+            default:
+                break;
+        }
     }
 }
