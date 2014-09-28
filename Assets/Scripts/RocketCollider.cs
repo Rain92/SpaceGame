@@ -4,7 +4,7 @@ using System.Collections;
 public class RocketCollider : MonoBehaviour {
 
 
-    void OnCollisionEnter(Collision col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         Debug.Log(123);
         //if (col.gameObject.name == "Earth")
@@ -13,12 +13,12 @@ public class RocketCollider : MonoBehaviour {
             GameObject.Find("deadnotice").SetActive(true);
         //}
     }
-    void OnCollisionStay(Collision collisionInfo)
+    void OnCollisionStay2D(Collision2D collisionInfo)
     {
         Debug.Log(123);
     }
 
-    void OnCollisionExit(Collision collisionInfo)
+    void OnCollisionExit2D(Collision2D collisionInfo)
     {
         Debug.Log(123);
     }

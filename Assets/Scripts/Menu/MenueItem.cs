@@ -36,12 +36,13 @@ public class MenueItem : MonoBehaviour
         switch (MenuId)
         {
             case 1:
+                Application.LoadLevel("Level 1");
                 break;
             case 2:
-        Debug.Log(234);
                 Application.Quit();
                 break;
             case 3:
+                Application.LoadLevel("Level 1");
                 break;
             default:
                 break;
