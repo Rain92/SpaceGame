@@ -4,3 +4,4 @@ set /P comment="Kommentar: "
 git add .
 git add -u .
 git commit -m "%comment%"
+pause
