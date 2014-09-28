@@ -27,8 +27,8 @@ public class BackgroundScript : MonoBehaviour
         Vector2 tileSize = tilePrefab.renderer.bounds.size;
 
         // columns and rows.
-        int columns = 5;
-        int rows = 4;
+        int columns = 2;
+        int rows = 2;
 
         // from screen left side to screen right side, because camera is orthographic.
         for (int c = -columns; c < columns; c++)
