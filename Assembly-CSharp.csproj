@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Attributes.cs" />
      <Compile Include="Assets\Scripts\BackgroundScript.cs" />
      <Compile Include="Assets\Scripts\CameraControl.cs" />
+     <Compile Include="Assets\Scripts\MenueItem.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Rocket.cs" />
      <Compile Include="Assets\Scripts\Vector3d.cs" />
