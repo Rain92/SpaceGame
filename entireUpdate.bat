@@ -1,4 +1,3 @@
-git stash
 git pull --rebase origin
 @echo off
 set /P comment="Kommentar: "
