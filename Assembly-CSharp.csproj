@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Menu\MenueItem.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Rocket.cs" />
+     <Compile Include="Assets\Scripts\RocketCollider.cs" />
      <Compile Include="Assets\Scripts\Vector3d.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
