@@ -46,14 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Attributes.cs" />
-     <Compile Include="Assets\Scripts\BackgroundScript.cs" />
-     <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Scripts\Menu\MenueItem.cs" />
-     <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\PlanetMovement\Attributes.cs" />
+     <Compile Include="Assets\Scripts\PlanetMovement\BackgroundScript.cs" />
+     <Compile Include="Assets\Scripts\PlanetMovement\CameraControl.cs" />
+     <Compile Include="Assets\Scripts\PlanetMovement\Movement.cs" />
+     <Compile Include="Assets\Scripts\PlanetMovement\Vector3d.cs" />
      <Compile Include="Assets\Scripts\Rocket.cs" />
      <Compile Include="Assets\Scripts\RocketCollider.cs" />
-     <Compile Include="Assets\Scripts\Vector3d.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,7 +10,7 @@ public class BackgroundScript : MonoBehaviour
 
     List<GameObject> tiles;
 
-    GameObject camera;
+    GameObject maincamera;
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class BackgroundScript : MonoBehaviour
 
         tiles = new List<GameObject>();
 
-        camera = GameObject.Find("Main Camera");
+        maincamera = GameObject.Find("Main Camera");
 
         // tile size.
         Vector2 tileSize = tilePrefab.renderer.bounds.size;
@@ -47,7 +47,7 @@ public class BackgroundScript : MonoBehaviour
     
     void Update()
     {
-        transform.position = new Vector3(camera.transform.position.x - (camera.transform.position.x % tilePrefab.renderer.bounds.size.x), camera.transform.position.y - (camera.transform.position.y % tilePrefab.renderer.bounds.size.y));
+        transform.position = new Vector3(maincamera.transform.position.x - (maincamera.transform.position.x % tilePrefab.renderer.bounds.size.x), maincamera.transform.position.y - (maincamera.transform.position.y % tilePrefab.renderer.bounds.size.y));
 
     }
 }
