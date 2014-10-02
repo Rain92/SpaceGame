@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AstroidSpawner.cs" />
      <Compile Include="Assets\Scripts\Menu\MenueItem.cs" />
      <Compile Include="Assets\Scripts\PlanetMovement\Attributes.cs" />
      <Compile Include="Assets\Scripts\PlanetMovement\BackgroundScript.cs" />
