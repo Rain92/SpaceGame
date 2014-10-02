@@ -13,6 +13,7 @@ public class Rocket : MonoBehaviour
     GameObject thrustfireobject;
 
     GameObject explosionobject;
+    GameObject entergateobject;
 
     // Use this for initialization
     void Start()
@@ -24,6 +25,8 @@ public class Rocket : MonoBehaviour
         thrustanimation.enabled = true;
 
         explosionobject = GameObject.Find("Explosion");
+        entergateobject = GameObject.Find("EnterGate");
+
     }
 
     // Update is called once per frame
@@ -54,6 +57,12 @@ public class Rocket : MonoBehaviour
             explosionframe++;
         }
 
+        if (egateframe != 0)
+        {
+            if (egateframe == 15*3)
+                this.gameObject.SetActive(false);
+            egateframe++;
+        }
     }
 
     int explosionframe = 0;
@@ -66,5 +75,17 @@ public class Rocket : MonoBehaviour
         this.GetComponent<PolygonCollider2D>().enabled = false;
         explosionobject.GetComponent<SpriteRenderer>().enabled = true;
         explosionobject.GetComponent<Animator>().enabled = true;
+    }
+
+    int egateframe = 0;
+    public void EnterGate()
+    {
+        egateframe = 1;
+        rocket.renderer.enabled = false;
+        attributes.IgnoreGravity = true;
+        attributes.movementdirection = new Vector3d();
+        this.GetComponent<PolygonCollider2D>().enabled = false;
+        entergateobject.GetComponent<SpriteRenderer>().enabled = true;
+        entergateobject.GetComponent<Animator>().enabled = true;
     }
 }

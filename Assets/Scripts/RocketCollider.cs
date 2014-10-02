@@ -14,7 +14,8 @@ public class RocketCollider : MonoBehaviour {
         }
         if (col.gameObject.name == "Spacegate")
         {
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
+            this.gameObject.GetComponent<Rocket>().EnterGate();
             TextMesh t = GameObject.Find("notice").GetComponent<TextMesh>();
             t.color = Color.green;
             t.text = "You win!";

@@ -19,9 +19,9 @@ public class AstroidSpawner : MonoBehaviour
         GameObject g = new GameObject("At");
         SpriteRenderer s = g.AddComponent<SpriteRenderer>();
 
-        int radinc = 7;
-
-        for (int ii = 0; ii < 3; ii++)
+        int radinc = 10;
+        
+        for (int ii = 0; ii < 10; ii++)
         {
             for (int i = 0; i < count; i++)
             {
@@ -30,7 +30,7 @@ public class AstroidSpawner : MonoBehaviour
                     new Vector3(
                         Mathf.Sin(2 * Mathf.PI / count * i) * (radiusx + ii * radinc) + UnityEngine.Random.Range(-variance, variance),
                         Mathf.Cos(2 * Mathf.PI / count * i) * (radiusy + ii * radinc) + UnityEngine.Random.Range(-variance, variance)),
-                    Quaternion.Euler(new Vector3(0, UnityEngine.Random.Range(0, Mathf.PI * 2), 0))) as GameObject;
+                    Quaternion.Euler(new Vector3(0, 0, UnityEngine.Random.Range(0, 360)))) as GameObject;
 
                 s.sprite = ss[UnityEngine.Random.Range(0, 24)];
 
