@@ -47,12 +47,13 @@ public class Rocket : MonoBehaviour
                 thrustfireobject.renderer.enabled = false;
         }
 
-        //if (explosionframe != 1)
-        //{
-        //    if (explosionframe == 5)
-        //        rocket.renderer.enabled = false;
-        //    explosionframe++;
-        //}
+        if (explosionframe != 0)
+        {
+            Debug.Log(explosionframe);
+            if (explosionframe == 27)
+                this.gameObject.SetActive(false);
+            explosionframe++;
+        }
 
     }
 
@@ -63,6 +64,7 @@ public class Rocket : MonoBehaviour
         rocket.renderer.enabled = false;
         attributes.IgnoreGravity = true;
         attributes.movementdirection = new Vector3d();
+        this.GetComponent<PolygonCollider2D>().enabled = false;
         explosionobject.GetComponent<SpriteRenderer>().enabled = true;
         explosionobject.GetComponent<Animator>().enabled = true;
     }
