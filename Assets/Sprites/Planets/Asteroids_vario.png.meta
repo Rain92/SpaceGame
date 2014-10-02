@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: 5d62faa091b14d540a7199858006d595
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Asteroids_vario
+    21300002: Asteroids_vario_0
+    21300004: Asteroids_vario_1
+    21300006: Asteroids_vario_2
+    21300008: Asteroids_vario_3
+    21300010: Asteroids_vario_4
+    21300012: Asteroids_vario_5
+    21300014: Asteroids_vario_6
+    21300016: Asteroids_vario_7
+    21300018: Asteroids_vario_8
+    21300020: Asteroids_vario_9
+    21300022: Asteroids_vario_10
+    21300024: Asteroids_vario_11
+    21300026: Asteroids_vario_12
+    21300028: Asteroids_vario_13
+    21300030: Asteroids_vario_14
+    21300032: Asteroids_vario_15
+    21300034: Asteroids_vario_16
+    21300036: Asteroids_vario_17
+    21300038: Asteroids_vario_18
+    21300040: Asteroids_vario_19
+    21300042: Asteroids_vario_20
+    21300044: Asteroids_vario_21
+    21300046: Asteroids_vario_22
+    21300048: Asteroids_vario_23
+    21300050: Asteroids_vario_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Asteroids_vario_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 832
+        width: 160
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 839
+        width: 164
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 832
+        width: 176
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_3
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 823
+        width: 185
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_4
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 819
+        width: 187
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 650
+        width: 140
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 647
+        width: 161
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_7
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 652
+        width: 178
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_8
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 647
+        width: 174
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_9
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 640
+        width: 193
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_10
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 442
+        width: 144
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_11
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 435
+        width: 154
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_12
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 432
+        width: 154
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_13
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 439
+        width: 169
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_14
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 419
+        width: 187
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 235
+        width: 134
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_16
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 232
+        width: 147
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_17
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 263
+        width: 149
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_18
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 259
+        width: 151
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_19
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 223
+        width: 185
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 27
+        width: 133
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_21
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 26
+        width: 141
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_22
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 22
+        width: 157
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_23
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 24
+        width: 158
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Asteroids_vario_24
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 6
+        width: 193
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

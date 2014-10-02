@@ -49,7 +49,6 @@ public class Rocket : MonoBehaviour
 
         if (explosionframe != 0)
         {
-            Debug.Log(explosionframe);
             if (explosionframe == 27)
                 this.gameObject.SetActive(false);
             explosionframe++;
