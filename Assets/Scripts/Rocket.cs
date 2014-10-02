@@ -59,7 +59,7 @@ public class Rocket : MonoBehaviour
 
         if (egateframe != 0)
         {
-            if (egateframe == 44)
+            if (egateframe == 30)
             {
                 entergateobject.GetComponent<SpriteRenderer>().enabled = false;
                 this.gameObject.SetActive(false);
