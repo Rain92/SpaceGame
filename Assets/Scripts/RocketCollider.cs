@@ -8,7 +8,8 @@ public class RocketCollider : MonoBehaviour {
     {
         if (col.gameObject.name == "Earth" || col.gameObject.name == "Moon")
         {
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
+            this.gameObject.GetComponent<Rocket>().Explode();
             GameObject.Find("notice").GetComponent<TextMesh>().text = "You are dead!";
         }
         if (col.gameObject.name == "Spacegate")
