@@ -89,6 +89,7 @@ public class Rocket : MonoBehaviour
         attributes.IgnoreGravity = true;
         attributes.movementdirection = new Vector3d();
         this.GetComponent<PolygonCollider2D>().enabled = false;
+        thrustfireobject.SetActive(false);
         entergateobject.GetComponent<SpriteRenderer>().enabled = true;
         entergateobject.GetComponent<Animator>().enabled = true;
     }

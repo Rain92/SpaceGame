@@ -58,10 +58,4 @@ public class AstroidSpawner : MonoBehaviour
 
         GameObject.Destroy(g);
     }
-
-
-    void Update()
-    {
-
-    }
 }

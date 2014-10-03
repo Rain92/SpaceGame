@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RocketCollider : MonoBehaviour {
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.name == "Earth" || col.gameObject.name == "Moon" || col.gameObject.name == "Asteroids")
         {
