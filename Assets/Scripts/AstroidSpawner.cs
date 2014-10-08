@@ -5,7 +5,7 @@ using System.Linq;
 
 public class AstroidSpawner : MonoBehaviour
 {
-    public int RadiusX = 250; 
+    public int RadiusX = 250;
     public int RadiusY = 200;
 
     public int Count = 100;
@@ -21,7 +21,7 @@ public class AstroidSpawner : MonoBehaviour
     public float SelfRotationMin = 0;
     public float SelfRotationMax = 3;
 
-    public float UmrundungsGewschwindigkeit = 0;
+    public float UmrundungsGewschwindigkeit = 0.1f;
     float umrundung = 0;
 
     float[] rotations;
@@ -41,7 +41,7 @@ public class AstroidSpawner : MonoBehaviour
         EdgeCollider2D edge = GetComponent<EdgeCollider2D>();
         Vector2[] points = new Vector2[Count + 1];
 
-        
+
         for (int ii = 0; ii < Layers; ii++)
         {
             for (int i = 0; i < Count; i++)
@@ -80,6 +80,12 @@ public class AstroidSpawner : MonoBehaviour
             {
                 umrundung += UmrundungsGewschwindigkeit;
                 astroids[ii * Count + i].transform.Rotate(new Vector3(0, 0, 1), rotations[ii * Count + i]);
+
+                float angle = Mathf.Atan2(astroids[ii * Count + i].transform.position.x / RadiusX, astroids[ii * Count + i].transform.position.y / RadiusY);
+
+                float x = Mathf.Cos(angle) * (RadiusX + ii * RadiusInc) * UmrundungsGewschwindigkeit;
+                float y = -Mathf.Sin(angle) * (RadiusY + ii * RadiusInc) * UmrundungsGewschwindigkeit;
+                astroids[ii * Count + i].transform.position += new Vector3(x, y, 0) / astroids[ii * Count + i].transform.position.magnitude*100;
 
             }
         }

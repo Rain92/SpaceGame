@@ -46,10 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Network\ConTest.cs" />
-     <Compile Include="Assets\Network\GuiScript.cs" />
-     <Compile Include="Assets\Network\Guitest.cs" />
-     <Compile Include="Assets\Network\NetworkScript.cs" />
      <Compile Include="Assets\Scripts\AstroidSpawner.cs" />
      <Compile Include="Assets\Scripts\Menu\MenueItem.cs" />
      <Compile Include="Assets\Scripts\PlanetMovement\Attributes.cs" />
