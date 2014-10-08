@@ -18,9 +18,20 @@ public class AstroidSpawner : MonoBehaviour
     public float ScaleMax = 7;
 
 
+    public float SelfRotationMin = 0;
+    public float SelfRotationMax = 3;
+
+    public float UmrundungsGewschwindigkeit = 0;
+    float umrundung = 0;
+
+    float[] rotations;
+
+    GameObject[] astroids;
 
     void Start()
     {
+        rotations = new float[Layers * Count];
+        astroids = new GameObject[Layers * Count];
         Sprite[] ss = UnityEditor.AssetDatabase.LoadAllAssetsAtPath("Assets/Sprites/Planets/Asteroids_vario.png").OfType<Sprite>().ToArray();
 
 
@@ -35,6 +46,7 @@ public class AstroidSpawner : MonoBehaviour
         {
             for (int i = 0; i < Count; i++)
             {
+                rotations[ii * Count + i] = UnityEngine.Random.Range(SelfRotationMin, SelfRotationMax);
 
                 float x = Mathf.Sin(2 * Mathf.PI / Count * i) * (RadiusX + ii * RadiusInc) + UnityEngine.Random.Range(-Variance, Variance);
                 float y = Mathf.Cos(2 * Mathf.PI / Count * i) * (RadiusY + ii * RadiusInc) + UnityEngine.Random.Range(-Variance, Variance);
@@ -45,6 +57,7 @@ public class AstroidSpawner : MonoBehaviour
                 GameObject gg = Instantiate(g, new Vector3(x, y), rotation) as GameObject;
                 gg.transform.localScale = new Vector3(scale, scale);
                 gg.transform.parent = this.transform;
+                astroids[ii * Count + i] = gg;
 
                 s.sprite = ss[UnityEngine.Random.Range(0, 24)];
 
@@ -57,5 +70,18 @@ public class AstroidSpawner : MonoBehaviour
         edge.points = points;
 
         GameObject.Destroy(g);
+    }
+
+    void Update()
+    {
+        for (int ii = 0; ii < Layers; ii++)
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                umrundung += UmrundungsGewschwindigkeit;
+                astroids[ii * Count + i].transform.Rotate(new Vector3(0, 0, 1), rotations[ii * Count + i]);
+
+            }
+        }
     }
 }
