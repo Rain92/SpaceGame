@@ -22,7 +22,12 @@ public class AstroidSpawner : MonoBehaviour
     public float SelfRotationMax = 3;
 
     public float UmrundungsGewschwindigkeit = 0.1f;
+
+    public bool ConstantSpeed = false;
+
+
     float umrundung = 0;
+
 
     float[] rotations;
 
@@ -62,9 +67,11 @@ public class AstroidSpawner : MonoBehaviour
                 s.sprite = ss[UnityEngine.Random.Range(0, 24)];
 
                 if (ii == 0)
+                {
                     points[i] = new Vector2(x, y);
-                if (ii == 0 && i == 0)
-                    points[Count] = new Vector2(x, y);
+                    if (i == 0)
+                        points[Count] = new Vector2(x, y);
+                }
             }
         }
         edge.points = points;
@@ -74,6 +81,10 @@ public class AstroidSpawner : MonoBehaviour
 
     void Update()
     {
+
+        //EdgeCollider2D edge = GetComponent<EdgeCollider2D>();
+        //Vector2[] points = new Vector2[Count + 1];
+
         for (int ii = 0; ii < Layers; ii++)
         {
             for (int i = 0; i < Count; i++)
@@ -83,11 +94,25 @@ public class AstroidSpawner : MonoBehaviour
 
                 float angle = Mathf.Atan2(astroids[ii * Count + i].transform.position.x / RadiusX, astroids[ii * Count + i].transform.position.y / RadiusY);
 
-                float x = Mathf.Cos(angle) * (RadiusX + ii * RadiusInc) * UmrundungsGewschwindigkeit;
-                float y = -Mathf.Sin(angle) * (RadiusY + ii * RadiusInc) * UmrundungsGewschwindigkeit;
-                astroids[ii * Count + i].transform.position += new Vector3(x, y, 0) / astroids[ii * Count + i].transform.position.magnitude*100;
+                float x = Mathf.Cos(angle) * (RadiusX + ii * RadiusInc);
+                float y = -Mathf.Sin(angle) * (RadiusY + ii * RadiusInc);
 
+                if(!ConstantSpeed)
+                    astroids[ii * Count + i].transform.position += new Vector3(x, y, 0) / astroids[ii * Count + i].transform.position.magnitude * UmrundungsGewschwindigkeit;
+                else
+                    astroids[ii * Count + i].transform.position += (new Vector3(x, y, 0) / astroids[ii * Count + i].transform.position.magnitude).normalized * UmrundungsGewschwindigkeit;
+
+
+
+
+                //if (ii == 0)
+                //{
+                //    points[i] = new Vector2(astroids[ii * Count + i].transform.position.x, astroids[ii * Count + i].transform.position.y);
+                //    if (i == 0)
+                //        points[Count] = new Vector2(astroids[ii * Count + i].transform.position.x, astroids[ii * Count + i].transform.position.y);
+                //}
             }
         }
+        //edge.points = points;
     }
 }
