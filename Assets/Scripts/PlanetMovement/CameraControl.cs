@@ -12,7 +12,7 @@ public class CameraControl : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         transform.position = new Vector3(earth.transform.position.x, earth.transform.position.y, transform.position.z);
     }

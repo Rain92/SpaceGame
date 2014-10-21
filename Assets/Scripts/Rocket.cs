@@ -5,9 +5,12 @@ using System;
 public class Rocket : MonoBehaviour
 {
 
+    public double Thrust = 10;
+
+    public int Fuel = -1;
+
     GameObject rocket;
     Attributes attributes;
-    public double Thrust = 10;
 
     Animator thrustanimation;
     GameObject thrustfireobject;
@@ -36,10 +39,13 @@ public class Rocket : MonoBehaviour
         rocket.transform.Rotate(new Vector3(0, 0, 1), Input.GetAxis("Horizontal") * -5);
 
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) && Fuel != 0)
         {
             if (!thrustfireobject.renderer.enabled)
                 thrustfireobject.renderer.enabled = true;
+
+            if (Fuel > 0)
+                Fuel--;
 
             attributes.movementdirection.x += Math.Cos(transform.rotation.eulerAngles.z / 360 * 2 * Math.PI) * Thrust;
             attributes.movementdirection.y += Math.Sin(transform.rotation.eulerAngles.z / 360 * 2 * Math.PI) * Thrust;
